@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- start banner area -->
+    <section class="inner-page banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>shopping cart</h2>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item"><a href="#">shop</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">cart</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end banner area -->
+
+    <!-- start cart-detail area -->
+    <section class="cart-page cart-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">image</th>
+                                    <th scope="col">product name</th>
+                                    <th scope="col">price</th>
+                                    <th scope="col">quantity</th>
+                                    <th scope="col">total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="pro-img">
+                                        <a href="#">
+                                            <img src="images/cart1.jpg" alt="Cart"/>
+                                        </a>
+                                    </th>
+                                    <td class="pro-name">
+                                        <a href="#">Jacket</a>
+                                    </td>
+                                    <td class="pro-price"><p>$<span id="jacket-price">210</span></p></td>
+                                    <td class="pro-quantity">
+                                        <div class="d-flex number-spinner justify-content-center">
+                                            <input id="jacket-quantity" type="text" class="form-control text-center input-value" value="1">
+                                            <div class="buttons">
+                                                <button id="jacket-plus" data-dir="up" class="up-btn"><i class="fa fa-plus"></i></button>
+                                                <button id="jacket-minus" data-dir="dwn" class="down-btn"><i class="fa fa-minus"></i></button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="pro-total"><p>$<span id="jacket-total">210</span></p></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="pro-img">
+                                        <a href="#">
+                                            <img src="images/cart2.jpg" alt="Cart"/>
+                                        </a>
+                                    </th>
+                                    <td class="pro-name">
+                                        <a href="#">Hoodies</a>
+                                    </td>
+                                    <td class="pro-price"><p>$<span id="hoodie-price">199</span></p></td>
+                                    <td class="pro-quantity">
+                                        <div class="d-flex number-spinner justify-content-center">
+                                            <input id="hoodie-quantity" type="text" class="form-control text-center input-value" value="1">
+                                            <div class="buttons">
+                                                <button id="hoodie-plus" data-dir="up" class="up-btn"><i class="fa fa-plus"></i></button>
+                                                <button id="hoodie-minus" data-dir="dwn" class="down-btn"><i class="fa fa-minus"></i></button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="pro-total"><p>$<span id="hoodie-total">199</span></p></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="pro-img">
+                                        <a href="#">
+                                            <img src="images/cart3.jpg" alt="Cart"/>
+                                        </a>
+                                    </th>
+                                    <td class="pro-name">
+                                        <a href="#">Skirt</a>
+                                    </td>
+                                    <td class="pro-price"><p>$<span id="skirt-price">299</span></p></td>
+                                    <td class="pro-quantity">
+                                        <div class="d-flex number-spinner justify-content-center">
+                                            <input id="skirt-quantity" type="text" class="form-control text-center input-value" value="1">
+                                            <div class="buttons">
+                                                <button id="skirt-plus" data-dir="up" class="up-btn"><i class="fa fa-plus"></i></button>
+                                                <button id="skirt-minus" data-dir="dwn" class="down-btn"><i class="fa fa-minus"></i></button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="pro-total"><p>$<span id="skirt-total">299</span></p></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end cart-detail area -->
+
+    <!-- start total cart area -->
+    <section class="cart-total">    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="total-area">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>Subtotal</h5>
+                                <h5>Vat</h5>
+                                <h5>Grand Total</h5>
+                            </div>
+                            <div class="col-md-6 text-end">
+                                <h5>$<span id="subtotal">708</span></h5>
+                                <h5>$<span id="vat">70.8</span></h5>
+                                <h5>$<span id="grandtotal">778.8</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end total cart area -->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

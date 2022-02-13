@@ -1,0 +1,217 @@
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*===========================================================
+cart banner CSS
+=============================================================*/
+.banner {
+    background: url(../images/banner.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+
+.inner-page.banner h2 {
+    font-size: 40px;
+    line-height: 58px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    color: #151a33;
+}
+
+.inner-page.banner .breadcrumb .breadcrumb-item,
+.inner-page.banner .breadcrumb .breadcrumb-item a {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #ec7a5c;
+}
+
+.inner-page.banner .breadcrumb .breadcrumb-item.active {
+    color: #151a33;
+}
+
+.inner-page.banner .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    color: #151a33;
+}
+
+/*===========================================================
+cart detail CSS
+=============================================================*/
+.cart-page.cart-detail {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.cart-page.cart-detail .table {
+    margin-bottom: 0;
+}
+
+.cart-page.cart-detail .table thead tr {
+    background: #feefeb;
+}
+
+.cart-page.cart-detail .table thead tr th {
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #151a33;
+    padding: 10px 0;
+    text-align: center;
+    border: 0;
+}
+
+.cart-page.cart-detail .table tbody tr .pro-img {
+    min-width: 105px;
+}
+
+.cart-page.cart-detail .table tbody tr .pro-name {
+    min-width: 250px;
+}
+
+.cart-page.cart-detail .table tbody tr .pro-price,
+.cart-page.cart-detail .table tbody tr .pro-cart,
+.cart-page.cart-detail .table tbody tr .pro-stock,
+.cart-page.cart-detail .table tbody tr .pro-total {
+    min-width: 150px;
+}
+
+.cart-page.cart-detail .table tbody tr .pro-quantity,
+.cart-page.cart-detail .table tbody tr .pro-delete {
+    min-width: 100px;
+}
+
+.cart-page.cart-detail .table tbody tr th,
+.cart-page.cart-detail .table tbody tr td {
+    padding: 15px 0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.cart-page.cart-detail .table tbody tr th p,
+.cart-page.cart-detail .table tbody tr th a,
+.cart-page.cart-detail .table tbody tr td p,
+.cart-page.cart-detail .table tbody tr td a {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.cart-page.cart-detail .table tbody tr th a,
+.cart-page.cart-detail .table tbody tr td a {
+    color: #ec7a5c;
+}
+
+.cart-page.cart-detail .table tbody tr th i,
+.cart-page.cart-detail .table tbody tr td i {
+    font-size: 16px;
+    color: #151a33;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.cart-page.cart-detail .table tbody tr th i:hover,
+.cart-page.cart-detail .table tbody tr td i:hover {
+    color: #ec7a5c;
+}
+
+.cart-page.cart-detail .table tbody tr th .stock,
+.cart-page.cart-detail .table tbody tr td .stock {
+    padding: 0 10px;
+    width: fit-content;
+    background: #feefeb;
+    margin: auto;
+}
+
+.cart-page.cart-detail .table tbody tr th .button-style1,
+.cart-page.cart-detail .table tbody tr td .button-style1 {
+    line-height: 40px;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.cart-page.cart-detail .table tbody tr th .button-style1:hover,
+.cart-page.cart-detail .table tbody tr td .button-style1:hover {
+    color: #fff;
+}
+
+.cart-page.cart-detail .table tbody tr th .number-spinner button,
+.cart-page.cart-detail .table tbody tr td .number-spinner button {
+    height: 25px;
+    width: 30px;
+    background: #151a33;
+    display: block;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.cart-page.cart-detail .table tbody tr th .number-spinner button:hover,
+.cart-page.cart-detail .table tbody tr td .number-spinner button:hover {
+    background: #ec7a5c;
+}
+
+.cart-page.cart-detail .table tbody tr th .number-spinner button i,
+.cart-page.cart-detail .table tbody tr td .number-spinner button i {
+    color: #fff;
+    font-size: 14px;
+}
+
+.cart-page.cart-detail .table tbody tr th .number-spinner .up-btn,
+.cart-page.cart-detail .table tbody tr td .number-spinner .up-btn {
+    margin-bottom: 10px;
+}
+
+.cart-page.cart-detail .table tbody tr th .number-spinner .input-value,
+.cart-page.cart-detail .table tbody tr td .number-spinner .input-value {
+    height: 60px;
+    width: 60px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border: 1px solid #ec7a5c;
+    color: #ec7a5c;
+    font-size: 30px;
+    font-weight: 400;
+    margin-right: 20px;
+    padding: 0;
+}
+
+.cart-page.cart-detail .table tbody tr:last-child th,
+.cart-page.cart-detail .table tbody tr:last-child td {
+    border: 0;
+}
+
+/*===========================================================
+cart total CSS
+=============================================================*/
+.cart-total .total-area {
+    background: #feefeb;
+    padding: 30px;
+}
+
+.cart-total .total-area h5 {
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #151a33;
+}
